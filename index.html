@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Presentation : JavaScript</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    margin:0;
+    padding:20px;
+}
+
+.slide{
+    background:white;
+    max-width:900px;
+    margin:30px auto;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+h1{
+    color:#0066cc;
+}
+
+h2{
+    color:#333;
+    border-bottom:2px solid #0066cc;
+    padding-bottom:5px;
+}
+
+code{
+    background:#eee;
+    padding:2px 5px;
+}
+
+pre{
+    background:#222;
+    color:#00ff88;
+    padding:15px;
+    border-radius:8px;
+    overflow:auto;
+}
+</style>
+</head>
+
+<body>
+
+<div class="slide">
+<h1>JavaScript</h1>
+<h3>หลักการทำงานและโครงสร้างพื้นฐาน</h3>
+<p>จัดทำโดย : ....................................</p>
+</div>
+
+<div class="slide">
+<h2>1. JavaScript คืออะไร</h2>
+
+<p><b>ความหมาย</b></p>
+
+<p>
+JavaScript คือ ภาษาการเขียนโปรแกรมที่ใช้สร้างเว็บไซต์ให้สามารถโต้ตอบกับผู้ใช้งาน
+เช่น ปุ่มกด เมนู ตรวจสอบข้อมูล และแสดงข้อความต่าง ๆ
+</p>
+
+<p><b>ประวัติความเป็นมา</b></p>
+
+<ul>
+<li>สร้างโดย Brendan Eich</li>
+<li>พัฒนาในปี ค.ศ.1995</li>
+<li>พัฒนาที่บริษัท Netscape</li>
+<li>ปัจจุบันใช้มาตรฐาน ECMAScript</li>
+</ul>
+
+<p><b>ความสำคัญ</b></p>
+
+<ul>
+<li>ทำให้เว็บไซต์มีความโต้ตอบ</li>
+<li>ทำงานร่วมกับ HTML และ CSS</li>
+<li>ใช้สร้าง Web Application</li>
+<li>ได้รับความนิยมทั่วโลก</li>
+</ul>
+
+</div>
+
+<div class="slide">
+
+<h2>2. การทำงานของ JavaScript</h2>
+
+<h3>Client-side</h3>
+
+<p>
+JavaScript ทำงานภายใน Web Browser ของผู้ใช้งาน
+เช่น Chrome, Edge และ Firefox
+</p>
+
+<h3>การทำงานร่วมกับ HTML และ CSS</h3>
+
+<ul>
+<li>HTML สร้างโครงสร้างเว็บไซต์</li>
+<li>CSS ตกแต่งเว็บไซต์</li>
+<li>JavaScript เพิ่มการทำงาน</li>
+</ul>
+
+<h3>การประมวลผลผ่าน Browser</h3>
+
+<p>
+
+ผู้ใช้เปิดเว็บไซต์
+
+<br>
+
+↓
+
+<br>
+
+Browser โหลด HTML
+
+<br>
+
+↓
+
+<br>
+
+Browser โหลด CSS
+
+<br>
+
+↓
+
+<br>
+
+Browser ประมวลผล JavaScript
+
+</p>
+
+</div>
+
+<div class="slide">
+
+<h2>3. โครงสร้างพื้นฐานของ JavaScript</h2>
+
+<h3>การเชื่อมไฟล์ JavaScript</h3>
+
+<pre>
+&lt;script src="script.js"&gt;&lt;/script&gt;
+</pre>
+
+<h3>การเขียนคำสั่ง</h3>
+
+<pre>
+let name = "Somchai";
+
+console.log(name);
+</pre>
+
+<h3>Comment</h3>
+
+<pre>
+// Comment 1 บรรทัด
+
+/*
+Comment
+หลายบรรทัด
+*/
+</pre>
+
+</div>
+
+<div class="slide">
+
+<h2>ตัวอย่างการใช้งาน</h2>
+
+<h3>1. แสดงข้อความ</h3>
+
+<pre>
+alert("สวัสดี JavaScript");
+</pre>
+
+<button onclick="alert('สวัสดี JavaScript')">
+ทดลองกด
+</button>
+
+<hr>
+
+<h3>2. เปลี่ยนข้อความ</h3>
+
+<p id="demo">Hello JavaScript</p>
+
+<button onclick="changeText()">
+เปลี่ยนข้อความ
+</button>
+
+</div>
+
+<div class="slide">
+
+<h2>สรุป</h2>
+
+<ul>
+
+<li>JavaScript เป็นภาษาที่ทำให้เว็บไซต์มีความสามารถมากขึ้น</li>
+
+<li>ทำงานร่วมกับ HTML และ CSS</li>
+
+<li>ประมวลผลผ่าน Web Browser</li>
+
+<li>สามารถสร้างเว็บไซต์และ Web Application ได้</li>
+
+</ul>
+
+</div>
+
+<script>
+
+function changeText(){
+
+document.getElementById("demo").innerHTML="สวัสดีทุกคน";
+
+}
+
+</script>
+
+</body>
+</html>
